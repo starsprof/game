@@ -61,7 +61,7 @@
         };
 
         var btnsave = document.getElementById('btnsave');
-        btnsave.addEventListener('click', applogic.saveitem);
+        btnsave.addEventListener('click', applogic.saveitem, false);
 
         var btnclear = document.getElementById('btnclear');
         btnclear.addEventListener('click', applogic.clearuielements, false);

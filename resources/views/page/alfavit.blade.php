@@ -48,47 +48,55 @@
                     <a href="#">Рекорды и сохранение результата</a>
                     <br>
                 </div>
-                <div><br><br>
+                <div>
+
                     Записать результат
                     <table style="width:200px;" id="tbl">
                         <tr>
                             <td>Имя</td>
                             <td>
-                                <input id="txtpname" type="text" class="c1"></td>
+                                <input id="txtpname" type="text" class="c1">
+                            </td>
                         </tr>
                         <tr>
                             <td>Дата</td>
                             <td>
-                                <input type="date" id="txtpaddr" class="c1"></td>
+                                <input type="date" id="txtpaddr" class="c1">
+                            </td>
                         </tr>
                         <tr>
                             <td>Очки</td>
                             <td>
-                                <input id="txtpcity" type="text" class="c1"></td>
+                                <input id="txtpcity" type="text" class="c1">
+                            </td>
 
                         </tr>
-                        <td>Размер</td>
-                        <td>
-                            <select class="c1">
-                                <option value="6">6×6</option>
-                                <option value="8">8×8</option>
-                                <option value="10">10×10</option>
-                                <option value="12">12×12</option>
+                        <tr>
+                            <td>Размер</td>
+                            <td>
+                                <select class="c1">
+                                    <option value="6">6×6</option>
+                                    <option value="8">8×8</option>
+                                    <option value="10">10×10</option>
+                                    <option value="12">12×12</option>
 
-                            </select>
-                        </td>
-
+                                </select>
+                            </td>
+                        </tr>
 
                     </table>
                     <p>
-                        <input id="btnsave" type="button" value="Сохранить"/>
-                        <input id="btnclear" type="button" value="Очистить поля"/><br>
-                        <input id="btnclearstorage" type="button" value="Очистить таблицу рекордов"/>
+                        <input id="btnsave" type="button" value="Сохранить">
+                        <input id="btnclear" type="button" value="Очистить поля"><br>
+                        <input id="btnclearstorage" type="button" value="Очистить таблицу рекордов">
                     </p>
 
+
+
+                    <div id="dvcontainer"></div>
                 </div>
 
-                <div id="dvcontainer"></div>
+
             </div>
 
 
@@ -100,5 +108,6 @@
 
 <script src="{{asset('js/LocalStorageLogic.js')}}"></script>
 <script src="{{asset('js/games.js')}}"></script>
+
 </body>
 </html>
