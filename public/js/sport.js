@@ -1,4 +1,3 @@
-
 var Person = {
     Name: "",
     Date: "",
@@ -31,7 +30,7 @@ var applogic = {
         var datacount = localStorage.length;
         var dvcontainer = document.getElementById('dvcontainer');
         if (datacount > 0) {
-            var render = "<table border='0' width='445px' align='center'>";
+            var render = "<table width='445px' class='table table-bordered bg-white'>";
             render += "<tr><th>Имя</th><th>Дата</th><th>Очки</th><th>Размер</th></tr>";
             for (var i = 0; i < datacount; i++) {
                 var key = localStorage.key(i);
@@ -86,7 +85,7 @@ window.onload = function() {
 
     var Interval;
     var images = [
-        '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18'
+        '4', '6', '13', '14', '16', '24', '28', '29', '34', '41', '50', '52', '71', '65', '69', '61', '62', '54'
     ];
 
     var clone = images.slice(0); // duplicate array
@@ -206,6 +205,5 @@ window.onload = function() {
     }
 
 
-        applogic.loaddata();
+    applogic.loaddata();
 };
-

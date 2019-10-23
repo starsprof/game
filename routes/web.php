@@ -17,5 +17,6 @@ Route::get('/', function () {
     return view('layouts.app');
 })->name('main');
 Route::get('/games', 'GameController@index');
-Route::view('animals', 'page.animals');
-Route::view('alfavit', 'page.alfavit');
+Route::view('smail', 'page.smail');
+Route::view('people', 'page.people');
+Route::view('sport', 'page.sport');

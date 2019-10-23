@@ -30,20 +30,26 @@
 
 <h1 style="color: white">Игра "Найди пару"</h1>
 
-    <div class="games-block" style="position: absolute; top: 50%; z-index: 2; width: 100%">
+    <div class="games-block" style="position: absolute; top: 40%; z-index: 2; width: 100%">
         <div class="container">
         <div class="row">
-            <a href="{{ url('/alfavit') }}" class="game-item col-md-4">
-                <h2>Буквы</h2>
-                <div  style="background: white; height: 300px">1</div>
+            <a href="{{ url('/people') }}" class="game-item col-md-4">
+                <h2>People</h2>
+                <div  style="background: white; height: 250px;">
+                    <img src="{{asset('img/2.png')}}" style="display: block;     padding: 60px 0; margin: 0 auto">
+                </div>
             </a>
-            <a href="{{ url('/animals') }}" class="game-item col-md-4">
-                <h2>Животные</h2>
-                <div  style="background: white; height: 300px">2</div>
+            <a href="{{ url('/smail') }}" class="game-item col-md-4">
+                <h2>Smail</h2>
+                <div  style="background: white; height: 250px;">
+                    <img src="{{asset('img/60.png')}}" style="display: block;     padding: 60px 0; margin: 0 auto">
+                </div>
             </a>
-            <a href="#" class="game-item col-md-4">
-                <h2>Буквы</h2>
-                <div  style="background: white; height: 300px">3</div>
+            <a href="{{ url('/sport') }}" class="game-item col-md-4">
+                <h2>Sport</h2>
+                <div  style="background: white; height: 250px;">
+                    <img src="{{asset('img/13.png')}}" style="display: block;     padding: 60px 0; margin: 0 auto">
+                </div>
             </a>
         </div>
     </div>
